@@ -12,10 +12,10 @@
     
         <body>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Weitere Resourcen zum Anarchismus</a>
+                <a href="index1.html">Home</a>
+                <a href="Weitere-Resourcen.html">Weitere Resourcen zum Anarchismus</a>
                 <a href="#">Musik video Kommunismus</a>
-                <a href="#">Erfahre deine Politische MEinung</a>
+                <a href="#">Erfahre deine Politische Meinung</a>
             </nav>
             <div class="slider-container">
                 <div class="slider">
@@ -56,6 +56,23 @@
                 <p>Sie können hier eine Powerpoint-präsi herunterladen, wenn es Ihnen so beliebt.</p>
                 <a href="https://github.com/Moin-docom/Moin-docom.github.io/blob/main/Anarchismus.pptx">Hier Drücken</a>
             </div>
+            <script>
+                 var coll = document.getElementsByClassName("collapsible");
+                  var i;
+                  for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+
+
+            </script>
         </body>
         <footer>
             <p>&copy; 2024 Tariq Assaf. Alle Rechte vorbehalten.</p>

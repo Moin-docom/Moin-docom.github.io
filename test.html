@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slider</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slider">
+    <div class="slide"><img src="pp1.png" alt="Image 1"></div>
+    <div class="slide"><img src="pp2.png" alt="Image 2"></div>
+    <div class="slide"><img src="pp3.png" alt="Image 3"></div>
+    <!-- Add more images as needed -->
+  </div>
+  <div class="prev" onclick="prevSlide()">&#10094;</div>
+  <div class="next" onclick="nextSlide()">&#10095;</div>
+</div>
+
+<script>
+  let slideIndex = 0;
+
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    if (index >= slides.length) { slideIndex = 0; }
+    if (index < 0) { slideIndex = slides.length - 1; }
+    slides.forEach(slide => slide.style.transform = `translateX(${-slideIndex * 100}%)`);
+  }
+
+  function prevSlide() {
+    showSlide(--slideIndex);
+  }
+
+  function nextSlide() {
+    showSlide(++slideIndex);
+  }
+
+  showSlide(slideIndex);
+</script>
+
+</body>
+</html>
