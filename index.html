@@ -4,124 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anarchismus</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        header {
-            background-color: #000000;
-            color: #ff0000;
-            padding: 1em;
-            position: relative;
-            text-align: center;
-        }
-
-        @font-face {
-            font-family: 'Anarchaos-qzjl';
-            src: url('./Anarchaos-qzjl.ttf') format('truetype');
-}
-        h1{
-            font-family: 'Anarchaos-qzjl';
-            font-size: 95px;
-            margin: 5px; 
-        }
-
-        #logo {
-            position: absolute;
-            width: 140px; /* Set a specific width for the logo */
-            height: auto;
-            right: 2%;
-            top: 10%;
-            
-        }
-        #styled-quote::before,
-        #styled-quote::after {
-            content: '\201C'; /* Unicode character for left double quotation mark */
-            font-family: 'Georgia', serif; /* Use a serif font for a decorative look */
-            font-size: 24px; /* Adjust the font size as needed */
-            margin-right: 5px; /* Add some spacing between the quote and text */
-            position: relative;
-             /* Adjust the positioning to align with text */
-        }
-
-        #styled-quote::after {
-            content: '\201D'; /* Unicode character for right double quotation mark */
-            margin-left: 5px; /* Add some spacing between the quote and text */
-        }
-
-        nav {
-            background-color: #444;
-            padding: 0.5em;
-        }
-
-        nav a {
-            color: #f76969;
-            text-decoration: none;
-            padding: 1em;
-            margin: 0 0.5em;
-        }
-
-        main {
-            padding: 2em;
-            background-color: #000000;
-        }
-        section{
-            color: #ff0000;
-
-        }
-        .content, .content_hidden {
-            color: white;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
-        em {
-            font-weight: 800;
-        }
-        .collapsible {
-            background-color: #000000;
-            color: #ffffff;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            border-color: #ffffff;
-            border-radius: 10px;
-            border-width: 1px;
-            border-style: solid;
-            font-size: 15px;
-        }
-        .active, .collapsible:hover {
-            background-color: #ccc;
-        }
-        .content_hidden{
-            padding: 1 15px;
-            overflow: hidden;
-            color: #000000;
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding-left: 5px;
-            padding-right: 5px;
-            max-height: 0;
-            transition: max-height 0.2s ease-out;
-            text-align: justify;
-        }
-        #foto1{
-            width: 100px;
-            height: auto;
-            float: left;
-            padding: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -133,9 +16,10 @@
 
     <nav>
         <a href="#">Home</a>
-        <a href="#">Meilensteine des Anarchismus</a>
-        <a href="#">Weitere Resourcen</a>
-        <a href="#">Quellen</a>
+        <a href="./Präsi.html">Powerpoint Präsi</a>
+        <a href="#">Weitere Resourcen zum Anarchismus</a>
+        <a href="#">Musik video Kommunismus</a>
+        <a href="#">Erfahre deine Politische MEinung</a>
     </nav>
 
     <main>
@@ -160,18 +44,18 @@
                      bevor es schließlich der Beschreibung eines erwünschten Gesellschaftsmodells diente.</p>
             </div>
             <button type="button" class="collapsible">Wichtige Personen / Ereignisse</button>
-            <div class="content_hidden" id="f2">
+            <div class="content_hidden" id="f3">
                 <p><img id="foto1"  src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Proudhon_atelier_Nadar_BNF_Gallica.jpg" alt="">In der Geschichte des Anarchismus gab viele Dichter und Denker, die ihn beeinflussten. Ein Name, den man oft dabei hört, ist Pierre-Joseph Proudhon. Seine Persönlichkeit war ein frühsozialistischer Franzman, der während dem 19.Jhr lebte. Er gilt als einer der ersten Vertreter des solidarischen Anarchismus. Konkret setzte er sich ein für die Abschaffung der Ausbeutung jeglicher Anderer und die Abschaffung der Herschaft des einen über den anderen. Er befürwortete den <em><i>Mutualismus </i></em>und den Föderlaismus. Vielzitiert ist ein berühmter Satz von ihm, der in sowohl in anarchistischen als auch in kommunistischen Kreisen oftmals gesagt wird : "Eigentum ist Diebstahl." Die Fanatiker unter den Anarchisten, die ihn ins Höchste loben, werden "Proudhonisten" bezeichnet. Über ihn gibt es noch vieles zu recherchieren, jedoch ist es nicht die Aufgabe dieser Seite, alles über ihn anzugeben.
                      Dafür ist Wikipedia zuständig, hier ein Link : <a href="https://de.wikipedia.org/wiki/Pierre-Joseph_Proudhon">Link zu Wikipedia_Proudhon</a> Diese Seite soll nur eine Einführung in die Thematik darbieten. <br> <br> 
                 Ein Ereigniss, welches oft mit dem Anarchismus in Verbindung gebracht wird, ist der Spanische Bürgerkreig. Er dauerte von Juli 1936 bis April 1939 zwischen der demokratisch gewählten Regierung der Zweiten Spanischen Republik („Republikanern“) und den rechtsgerichteten Putschisten unter General Francisco Franco („Nationalisten“ / "Monarchisten"). Bereits vor dem Krieg gab es starke anarchistische Gruppierungen in Spanien. Diese taten sich mit den Republikanern zusammen und die Monarchisten zu bekämpfen, dies taten sie vermutlich, weil es keinen Staat gibt, der sich mehr in das Leben des Bürgers einmischt, als einen autoritären. Und obwohl sie /Spoiler/ verloren, zeigt dieses Ereigniss, zu welchem Ausmass die Anarchisten-Bewegung im 19.Jhr gekommen ist.</p>
             </div>
             <button type="button" class="collapsible">Was ist Mutualismus</button>
-            <div class="content_hidden" id="f2">
+            <div class="content_hidden" id="f4">
                 <p>Der Mutualismus ist eine politisch-ökonomische Ideologie, die auf gegenseitigem Austausch, gerechter Verteilung und dem Besitz und der Nutzung von Ressourcen basiert. Er betont die Bedeutung von kooperativen Arbeitsbeziehungen, Arbeiterkooperativen und einem freien Markt, der auf fairen Wettbewerb und nicht auf Monopolen beruht. Im Kern strebt der Mutualismus nach einer Gesellschaft, in der individuelle Freiheit, soziale Gerechtigkeit und wirtschaftliche Solidarität im Einklang stehen.</p>
             
             </div>
             <button type="button" class="collapsible">Die verschiedenen Auslebungen des Anarchismus</button>
-            <div class="content_hidden" id="f2">
+            <div class="content_hidden" id="f5">
                 <p>Im Laufe der Zeit entwickelten sich viele Interpretationen des Anarchismus. Diese verschiedenene Interpretationen haben über die Zeit verschiedene Anhänger mit verschiedenen Weltbilden angezogen, die sich meist untereinander streiten, vonwegen, was der echte Anarchismus seie. Wir wollen uns hier aber auf 3 gut bekannte Ansicht konzentrieren. Der Anarcho - Kapitalismus, - Kommunismus , und -Syndicalismus. 
                     Anarcho-Kapitalismus: Anarcho-Kapitalismus ist eine politische Philosophie, die auf der Idee basiert, dass die individuelle Freiheit am besten durch eine völlig freie Marktwirtschaft und die Abwesenheit jeglicher staatlicher Intervention gewährleistet wird. Anarcho-Kapitalisten befürworten die Abschaffung aller staatlichen Institutionen, einschließlich der Streitkräfte, der Polizei und der Gerichte, und glauben, dass private Unternehmen und Organisationen in der Lage sein sollten, diese Funktionen zu übernehmen.
                     Sie argumentieren, dass freiwillige Verträge und das Recht auf Eigentum die Grundlage für eine funktionierende Gesellschaft bilden sollten.
@@ -183,12 +67,11 @@
                     Sie setzen auf Taktiken wie den Generalstreik und die direkte Aktion, um ihre Ziele zu erreichen. Der Anarcho-Syndikalismus strebt oft nach einer dezentralen Organisationsstruktur, in der die Gewerkschaften und Arbeiterkollektive die Produktionsmittel kontrollieren und die Gesellschaft auf basisdemokratischen Prinzipien funktioniert.
                 </p>
             
-            </div>
-            <button type="button" class="collapsible">Eine PP Präsi</button>
-            <div class="content_hidden" id="f2">
-                <p>Sie können hier eine Powerpoint-präsi herunterladen, wenn es Ihnen so beliebt.</p>
-                <a href="https://github.com/Moin-docom/Moin-docom.github.io/blob/main/Anarchismus.pptx">PP präsi</a>
-            
+        </section>
+        <section>
+            <h3>Eine Powerpoint Präsi</h3>
+            <div>
+                
             </div>
         </section>
 

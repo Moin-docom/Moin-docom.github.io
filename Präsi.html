@@ -1,0 +1,63 @@
+<Doctype html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Präsentation</title>
+       
+    </head>
+
+
+    
+        <body>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Weitere Resourcen zum Anarchismus</a>
+                <a href="#">Musik video Kommunismus</a>
+                <a href="#">Erfahre deine Politische MEinung</a>
+            </nav>
+            <div class="slider-container">
+                <div class="slider">
+                  <div class="slide"><img src="pp1.png" alt="Image 1"></div>
+                  <div class="slide"><img src="pp2.png" alt="Image 2"></div>
+                  <div class="slide"><img src="pp3.png" alt="Image 3"></div>
+                  <div class="slide"><img src="pp4.png" alt="Image 1"></div>
+                  <div class="slide"><img src="pp5.png" alt="Image 2"></div>
+                  <div class="slide"><img src="pp6.png" alt="Image 3"></div>
+                </div>
+                <div class="prev" onclick="prevSlide()">&#10094;</div>
+                <div class="next" onclick="nextSlide()">&#10095;</div>
+              </div>
+              
+              <script>
+                let slideIndex = 0;
+              
+                function showSlide(index) {
+                  const slides = document.querySelectorAll('.slide');
+                  if (index >= slides.length) { slideIndex = 0; }
+                  if (index < 0) { slideIndex = slides.length - 1; }
+                  slides.forEach(slide => slide.style.transform = `translateX(${-slideIndex * 100}%)`);
+                }
+              
+                function prevSlide() {
+                  showSlide(--slideIndex);
+                }
+              
+                function nextSlide() {
+                  showSlide(++slideIndex);
+                }
+              
+                showSlide(slideIndex);
+              </script>
+              
+            <button type="button" class="collapsible">Die Powerpoint herunterladen</button>
+            <div class="content_hidden" id="f6">
+                <p>Sie können hier eine Powerpoint-präsi herunterladen, wenn es Ihnen so beliebt.</p>
+                <a href="https://github.com/Moin-docom/Moin-docom.github.io/blob/main/Anarchismus.pptx">Hier Drücken</a>
+            </div>
+        </body>
+        <footer>
+            <p>&copy; 2024 Tariq Assaf. Alle Rechte vorbehalten.</p>
+        </footer>
+    </html>

@@ -1,0 +1,150 @@
+.slider-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .slide {
+    flex: 0 0 100%;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #000000;
+    color: #ff0000;
+    padding: 1em;
+    position: relative;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Anarchaos-qzjl';
+    src: url('./Anarchaos-qzjl.ttf') format('truetype');
+}
+h1{
+    font-family: 'Anarchaos-qzjl';
+    font-size: 95px;
+    margin: 5px; 
+}
+
+#logo {
+    position: absolute;
+    width: 140px; /* Set a specific width for the logo */
+    height: auto;
+    right: 2%;
+    top: 10%;
+    
+}
+#styled-quote::before,
+#styled-quote::after {
+    content: '\201C'; /* Unicode character for left double quotation mark */
+    font-family: 'Georgia', serif; /* Use a serif font for a decorative look */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-right: 5px; /* Add some spacing between the quote and text */
+    position: relative;
+     /* Adjust the positioning to align with text */
+}
+
+#styled-quote::after {
+    content: '\201D'; /* Unicode character for right double quotation mark */
+    margin-left: 5px; /* Add some spacing between the quote and text */
+}
+
+nav {
+    background-color: #444;
+    padding: 0.5em;
+}
+
+nav a {
+    color: #f76969;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 0.5em;
+}
+
+main {
+    padding: 2em;
+    background-color: #000000;
+}
+section{
+    color: #ff0000;
+
+}
+.content, .content_hidden {
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+em {
+    font-weight: 800;
+}
+.collapsible {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    border-color: #ffffff;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 15px;
+}
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+.content_hidden{
+    padding: 1 15px;
+    overflow: hidden;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    text-align: justify;
+}
+#foto1{
+    width: 100px;
+    height: auto;
+    float: left;
+    padding: 5px;
+}
